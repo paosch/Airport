@@ -3,7 +3,7 @@ require_relative 'weather'
 class Airport
 
   attr_reader :weather
-
+  attr_accessor :hangar
   def initialize
     @hangar = []
     @weather = Weather.new

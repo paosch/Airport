@@ -1,18 +1,25 @@
 require 'airport'
 
 describe Airport do
-  let(:airport) { Airport.new }
-  let(:plane) { Plane.new}
+  subject(:airport) { Airport.new }
+  let(:plane1) { Plane.new('747') }
+  let(:plane2) { Plane.new('999') }
+
   describe '#land' do
     it "instruct plane to land" do
-      expect(airport.land(plane)).to eq(plane)
+      expect(airport.land(plane1)).to eq([plane1])
     end
   end
 
   describe '#take_off' do
-    it "allows plane to take off and confirms it's left the airport" do
-      airport.land(plane)
-      expect(airport.take_off(plane)).not_to eq(plane) # confirms plane not there
+    it 'plane in hangar takes off, hangar becomes empty' do
+      airport.land(plane1)
+      expect(airport.take_off(plane1)).to eq([])
+    end
+    it 'one of the two planes in hangar takes off, one plane left in hangar' do
+      airport.land(plane1)
+      airport.land(plane2)
+      expect(airport.take_off(plane1)).to eq([plane2])
     end
   end
 end

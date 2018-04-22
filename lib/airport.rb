@@ -10,6 +10,7 @@ class Airport
   end
 
   def land(plane)
+    raise 'Landing denied' if @weather.stormy?
     @hangar.push(plane)
   end
 

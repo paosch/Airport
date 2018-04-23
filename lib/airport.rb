@@ -14,13 +14,19 @@ class Airport
 
   def land(plane)
     raise 'Bad weather, landing denied' if @weather.stormy?
-    raise 'Airport full, landing denied' if @hangar.length == CAPACITY
+    raise 'Plane in airport, it cannot land again' unless flying?(plane)
+    raise 'Airport full, landing denied' if @hangar.length == @capacity # cannot use the constant because it won't let me change it in the tests later
     @hangar.push(plane)
   end
 
   def take_off(plane)
     raise 'Bad weather, takeoff denied' if @weather.stormy?
+    raise 'Plane already flying, it cannot take off' if flying?(plane)
     @hangar.delete(plane)
     @hangar
+  end
+
+  def flying?(plane) # plane not in hangar!!
+    !@hangar.include?(plane)
   end
 end

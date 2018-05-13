@@ -50,9 +50,10 @@ I would like a default airport capacity that can be overridden as appropriate
 
 ## Instructions to run the code
 - clone this repository
-- run gem install bundle
-- run bundle install
+- run `gem install bundle`
+- run `bundle install`
 
 
-## Test coverage: 97.33%
-Tests are run with the `rspec` command
+## Test coverage: 
+97.33%
+The tests are run with the `rspec` command

@@ -54,6 +54,6 @@ I would like a default airport capacity that can be overridden as appropriate
 - run `bundle install`
 
 
-## Test coverage: 
-97.33%
-The tests are run with the `rspec` command
+## Test coverage
+![screen shot 2018-05-13 at 16 44 15](https://user-images.githubusercontent.com/33669463/39968975-6d27f3aa-56cd-11e8-9e61-8e58fee431c5.png)
+

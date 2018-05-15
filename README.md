@@ -55,5 +55,5 @@ I would like a default airport capacity that can be overridden as appropriate
 
 
 ## Test coverage
-![screen shot 2018-05-13 at 16 44 15](https://user-images.githubusercontent.com/33669463/39968975-6d27f3aa-56cd-11e8-9e61-8e58fee431c5.png)
+![screen shot 2018-05-15 at 16 26 21](https://user-images.githubusercontent.com/33669463/40066823-da4c2a88-585c-11e8-808a-73feac930b82.png)
 

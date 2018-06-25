@@ -1,5 +1,5 @@
-# Airport Challenge
-
+# Airport 
+[![Build Status](https://travis-ci.org/paosch/Airport.svg?branch=master)](https://travis-ci.org/paosch/Airport)
 
 ```
         ______
@@ -16,7 +16,7 @@
 
 ## Description
 
-A program in Ruby to control the flow of planes at an airport. 
+A program written in Ruby to control the flow of planes at an airport. 
 
 
 ## User stories
